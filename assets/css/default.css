@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+.so-body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background-color: #cccccc; */
+}
+.so-bounding-box {
+  width: 100%;
+  height: 100%;
+  /* border: 5px solid red; */
+  position: relative;
+  /* overflow: hidden; */
+
+}
+.so-background {
+  width: 100%;
+  height: 100%;
+  /* border: 5px solid blue; */
+  position: absolute;
+}
+.so-space {
+  width: 100%;
+  height: 100%;
+  /* opacity: 50%; */
+}
+.so-astronaut-box {
+  width: 85px;
+  height: 100px;
+  /* border: 2px solid turquoise; */
+  position: absolute;
+  /* left: 100%; */
+  top: 20%;
+  animation: float 500s infinite;
+}
+.so-astronaut {
+  height: 100%;
+}
+.so-astronaut-guitar {
+  border: 2px solid yellow;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  animation: none;
+}
+
+@keyframes float {
+  0% {
+    top: 20vh;
+    left: 92vw;
+  }
+  15% {
+    top: 35vh;
+    left: 45vw;
+
+  }
+  30% {
+    top: 50vh;
+    left: 0vw;
+    transform: rotate(70deg)
+  }
+  40% {
+    top: 82vh;
+    left: 10vw;
+  }
+
+  60% {
+    top: 0vh;
+    left: 40vw;
+  }
+  80% {
+    top: 85vh;
+    left: 75vw;
+  }
+  100% {
+    top: 20vh;
+    left: 92vw;
+  }
+}

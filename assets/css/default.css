@@ -8,14 +8,43 @@
   margin: 0;
   /* background-color: #cccccc; */
 }
+
+.so-body--cursor {
+  cursor: url("../images/guitar-tiny.png"), crosshair;
+}
+
+.so-body--cursor--no-guitar {
+  cursor: auto;
+}
+
+.so-body--cursor--no-guitar .so-astronaut-box {
+  cursor: auto;
+}
+
 .so-bounding-box {
   width: 100%;
   height: 100%;
   /* border: 5px solid red; */
   position: relative;
   /* overflow: hidden; */
-
 }
+
+.so-bounding-box--show-guitar  .so-astronaut-box--guitar {
+  display: block;
+}
+
+.so-bounding-box--show-guitar  .so-astronaut-box--no-guitar {
+  display: none;
+}
+
+.so-astronaut-box--guitar {
+  display: none;
+}
+
+.so-astronaut-box--no-guitar {
+  display: block;
+}
+
 .so-background {
   width: 100%;
   height: 100%;
@@ -27,6 +56,7 @@
   height: 100%;
   /* opacity: 50%; */
 }
+
 .so-astronaut-box {
   width: 85px;
   height: 100px;
@@ -35,16 +65,19 @@
   /* left: 100%; */
   top: 20%;
   animation: float 500s infinite;
+  cursor: url("../images/guitar-tiny-angle.png"), auto;
 }
+
 .so-astronaut {
-  height: 100%;
+  width: 100%;
+  /* position: absolute; */
 }
+
 .so-astronaut-guitar {
-  border: 2px solid yellow;
   position: absolute;
-  left: 10%;
-  top: 20%;
-  animation: none;
+  /* left: 1%; */
+  /* top: 20%; */
+  /* animation: none; */
 }
 
 @keyframes float {

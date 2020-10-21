@@ -272,11 +272,11 @@
 }
 
 .so-overlay-page .so-overlay-expanded {
-  display: none;
+  display: block;
 }
 
 .so-overlay-page--open .so-overlay-expanded {
-  display: block;
+  display: none;
 }
 
 @font-face {

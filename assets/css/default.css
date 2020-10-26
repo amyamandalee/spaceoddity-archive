@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+a {
+  color: lightgray;
+}
 .so-body {
   width: 100%;
   padding: 0;
@@ -212,16 +215,16 @@
 
 .so-button-collapsed-inner {
   position: absolute;
-  height: 7px;
-  width: 7px;
-  margin: 8px;
+  height: 6px;
+  width: 6px;
+  margin: 7px;
   border-radius: 50%;
   border: 2px solid white;
 }
 .so-button-collapsed-outer {
   position: absolute;
-  height: 23px;
-  width: 23px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   border: 4px solid white;
 }
@@ -235,17 +238,17 @@
 }
 .so-button-expanded-inner {
   position: absolute;
-  height: 9px;
-  width: 9px;
-  margin: 7px;
+  height: 5px;
+  width: 5px;
+  margin: 6px;
   border-radius: 50%;
   border: 4px solid white;
 }
 
 .so-button-expanded-outer {
   position: absolute;
-  height: 23px;
-  width: 23px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   border: 2px solid white;
 }
@@ -262,14 +265,27 @@
   left: 65px;
   top: 75px;
   width: 40vw;
-  height: 70vh;
-  background-color: rgba(225,225,225,0.3);
+  height: auto;
+  /* background-color: rgba(225,225,225,0.3); */
   border-radius: 15px;
   padding: 20px;
   color: white;
   font-family: BradleyHandBold;
   pointer-events: none;
+  background-image: url("../images/info-overlay-small.png");
 }
+
+/* .so-text-box--image {
+  position: absolute;
+  left: 65px;
+  top: 75px;
+  width: 40vw;
+  height: auto;
+  border-radius: 15px;
+  color: white;
+  font-family: BradleyHandBold;
+  pointer-events: none;
+} */
 
 .so-overlay-page .so-overlay-expanded {
   display: block;
